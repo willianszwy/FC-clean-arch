@@ -23,3 +23,27 @@ evans -r repl
 service order_service
 call ListOrders
 ```
+
+## GraphQL
+
+http://localhost:8080/#
+
+```graphql
+mutation createOrder {
+  createOrder(input: {id:"ccc", Price: 12.2,Tax:2.0}){
+    id
+    Price
+    Tax
+    FinalPrice
+  }
+}
+
+query Orders {
+        orders {
+            id
+            Price
+            Tax
+            FinalPrice
+        }
+    }
+```

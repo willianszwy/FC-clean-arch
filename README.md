@@ -1,7 +1,11 @@
 # GoExpert - Clean Arch
 
 ```shell
-docker-compose up  
+docker-compose up -d  
+```
+
+```shell
+make migrate
 ```
 
 ```shell
